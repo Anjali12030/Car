@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 
 #load model
-with open('car_price_model.pkl', 'wb') as file:
+with open('car_price_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 from os import curdir
