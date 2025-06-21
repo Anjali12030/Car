@@ -1,4 +1,3 @@
-pip install scikit-learn
 import streamlit as st
 import pickle as pkl
 import pandas as pd
@@ -13,8 +12,8 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 
 #load model 
-with open('car_price.pkl','rb') as file:
-    model = pkl.load(file)
+with open('model5.pkl','rb') as file:
+    model = pickle.load(file)
 
 # streamlit app UI
 st.title("Car Price Prediction App")
