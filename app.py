@@ -11,7 +11,7 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 
 #load model 
-with open('model5.pkl','rb') as file:
+with open('car_price.pkl','rb') as file:
     model = pickle.load(file)
 
 # streamlit app UI
